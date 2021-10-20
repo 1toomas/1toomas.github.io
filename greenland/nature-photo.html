@@ -58,17 +58,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
-  <script>
-
-  </script>
   <header id="portfolio">
-    <a href="#"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="./nature-photo.html"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>My Nature Photography</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Choose:</span> 
-      <button class="w3-button w3-black">Here we are</button>
+      <span class="w3-margin-right">Partner sites:</span> 
+      <button class="w3-button w3-black" onclick="window.open('../greenland/nature-photo.html','_self')">Here we are</button>
       <button class="w3-button w3-white" onclick="window.open('../horse-and-hound/horse-and-hound.html','_self')"><i class="fa fa-diamond w3-margin-right"></i>Horse and Hound</button>
       <button class="w3-button w3-white w3-hide-small" onclick="window.open('../midwest/bank-and-architects.html','_self')"><i class="fa fa-photo w3-margin-right"></i>Midwest Bank</button>
       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
@@ -79,23 +76,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%" class="w3-hover-opacity">
+      <a href="mountains.html">
+        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%" class="w3-hover-opacity">
+      </a>
       <div class="w3-container w3-white">
-        <p><b>Mountains</b></p>
+        <p><b><a href="mountains.html">Mountains</a></b></p>
         <p>A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. A mountain differs from a plateau.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="north.html">
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      </a>
       <div class="w3-container w3-white">
-        <p><b>North</b></p>
+        <p><b><a href="north.html">North</a></b></p>
         <p>North is one of the four compass points or cardinal directions. It is the opposite of south and is perpendicular to East and West.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">
+      <a href="nature.html">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">
+      </a>
       <div class="w3-container w3-white">
-        <p><b>Nature</b></p>
+        <p><b><a href="nature.html">Nature</a></b></p>
         <p>Nature, in the broadest sense, is the natural, physical, material world or universe.</p>
       </div>
     </div>
@@ -128,13 +131,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Pagination -->
+  <script>
+    function selectNumber (item) {
+      console.log("Item is:");
+      console.log(item);
+      var barItemsBlack = document.getElementsByClassName("my-num w3-black");
+      for (var i = 0; i < barItemsBlack.length; i++) {
+        console.log("1:");
+        console.log(barItemsBlack[i]);
+        barItemsBlack[i].classList.add('w3-hover-black');
+        console.log("2:");
+        console.log(barItemsBlack[i]);
+        barItemsBlack[i].classList.remove('w3-black');
+        console.log("3:");
+        console.log(barItemsBlack[i]);
+      }
+      item.classList.remove('w3-hover-black');
+      item.classList.add('w3-black');
+      return false;
+    }
+  </script>
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" id="page1" onclick="return selectNumber(this)" class="my-num w3-bar-item w3-button w3-black">1</a>
+      <a href="#" id="page2" onclick="return selectNumber(this)" class="my-num w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" id="page3" onclick="return selectNumber(this)" class="my-num w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" id="page4" onclick="return selectNumber(this)" class="my-num w3-bar-item w3-button w3-hover-black">4</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
