@@ -113,7 +113,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>A cloud is an aerosol consisting of a visible mass of minute liquid droplets, frozen crystals, or other particles suspended in the atmosphere of a planetary body or similar space.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    <!-- Hide this div from being shown to operator. -->
+    <div class="sm_cobrowsing_hidden_field w3-third w3-container w3-margin-bottom">
       <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Coffee Beans" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Do You Smell?</b></p>
@@ -281,11 +282,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
       <div class="w3-section">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <!-- Mask this field content with * for operator. -->
+        <input class="sm_cobrowsing_masked_field w3-input w3-border" type="text" name="Email" required>
       </div>
       <div class="w3-section">
         <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <!-- Prevent operator from modifying this field. -->
+        <input class="sm_cobrowsing_disabled_field w3-input w3-border" type="text" name="Message" required>
       </div>
       <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
     </form>
