@@ -8,7 +8,8 @@ const contactAnyArr = Array.from(document.body.querySelectorAll(".contact-any"))
 sm.getApi({version: 'v1'}).then((glia) => {
   //
   const onQueueStateUpdate = (queueState) => {
-    // Act based on general queue availability regardless of media type
+    // Some of the numbers are replaced when there is a queue available regardless of media type.
+    // The phone numbers are changed back when no queue is available.
     if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE) {
       // replace phone numbers with Contact Us text
       contactAnyArr.forEach((elem) => {
@@ -20,24 +21,27 @@ sm.getApi({version: 'v1'}).then((glia) => {
         elem.innerHTML = elem.getAttribute("glia-phone-orig");
       });
     }
-  // Act based on availability of a queue with audio or phone ability
-  if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE &&
-      (queueState.medias.indexOf('audio') >= 0 || queueState.medias.indexOf('phone') >= 0)) {
-    // replace phone numbers with Contact Us text
-    phoneArr.forEach((elem) => {
-      elem.innerHTML = messagePhone;
-    });
-    phoneLinkArr.forEach((elem) => {
-      elem.innerHTML = messagePhoneLink;
-    });} else {
-    // replace Contact Us text with phone numbers
-    phoneArr.forEach((elem) => {
-      elem.innerHTML = elem.getAttribute("glia-phone-orig");
-    });
-    phoneLinkArr.forEach((elem) => {
-      elem.innerHTML = elem.getAttribute("glia-phone-orig");
-    });
-  };
+    // Other phone numbers are replaced when a queue with audio or phone ability is available.
+    // The phone numbers are changed back when no 
+    if (queueState.state === queueState.QUEUE_STATES.CAN_QUEUE &&
+        (queueState.medias.indexOf('audio') >= 0 || queueState.medias.indexOf('phone') >= 0)) {
+      // replace phone numbers with Contact Us text
+      phoneArr.forEach((elem) => {
+        elem.innerHTML = messagePhone;
+      });
+      phoneLinkArr.forEach((elem) => {
+        elem.innerHTML = messagePhoneLink;
+      });
+    } else if (queueState.state === queueState.QUEUE_STATES.CANNOT_QUEUE) {
+//    || (queueState.medias.indexOf('audio') === -1 && queueState.medias.indexOf('phone') === -1) ) {
+      // replace Contact Us text with phone numbers
+      phoneArr.forEach((elem) => {
+        elem.innerHTML = elem.getAttribute("glia-phone-orig");
+      });
+      phoneLinkArr.forEach((elem) => {
+        elem.innerHTML = elem.getAttribute("glia-phone-orig");
+      });
+    }
   }
   // Store the initial situation so it can be replaced back and forth
   phoneArr.forEach((elem) => {
