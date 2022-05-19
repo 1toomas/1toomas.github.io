@@ -3,6 +3,15 @@
 <head>
   <title>The My Nature Photography</title>
 
+  <!-- For authentication -->
+	<script>
+		//Read idtoken from query parameter with the same name.
+		const params = new Proxy(new URLSearchParams(window.location.search), {
+			get: (searchParams, prop) => searchParams.get(prop),
+		});
+		const idToken = params.idtoken;
+		window.getGliaContext = () => ({ idToken });
+	</script>
   <!-- Glia script -->
   <script async src="https://api.beta.glia.com/salemove_integration.js"></script>
 
@@ -308,7 +317,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
           <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large"><a href="https://kadriiiii.github.io/scram/dc-media-and-giraffes.html">Very-very extraordinary</a></span><br>
+          <span class="w3-large"><a href="https://kadriiiii.github.io/scram/dc-media-and-giraffes.html">Very-very</a></span><br>
           <span>Sed mattis nunc</span>
         </li>
         <li class="w3-padding-16">
