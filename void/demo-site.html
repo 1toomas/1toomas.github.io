@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo Site</title>
+
+    <!-- For authentication -->
+    <script>
+      //Read idtoken from query parameter with the same name.
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      const idToken = params.idtoken;
+      window.getGliaContext = () => ({ idToken });
+    </script>
+    <!-- Glia script -->
+    <script async src="https://api.beta.glia.com/salemove_integration.js"></script>
+  </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  /* Style the header */
+  .header {
+    padding: 80px;
+    text-align: center;
+  }
+</style>
+</head>
+<body style="background-color:LightGray">
+  <div class="header">
+    <h1>Demo Site</h1>
+    <p>This is bank.</p>
+  </div>
+</body>
+</html>
