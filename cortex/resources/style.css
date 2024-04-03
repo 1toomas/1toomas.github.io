@@ -428,7 +428,7 @@ index-1
 .rate-icon { float: left; padding-top: 5px; padding-right: 20px; padding-left: 20px; }
 .rate-box { }
 .rate-title { text-transform: uppercase; font-size: 14px; color: #778191; }
-.cta { background-size: cover; margin: 0; min-height: 410px; border: none; padding: 100px 0px; background: linear-gradient(rgba(16, 75, 149, 0.8), rgba(16, 75, 149, 0.8)), rgba(16, 75, 149, 0.8) url(../images/cta-img.jpg) no-repeat center; }
+.cta { background-size: cover; margin: 0; min-height: 410px; border: none; padding: 100px 0px; background: linear-gradient(rgba(16, 75, 149, 0.8), rgba(16, 75, 149, 0.8)), rgba(16, 75, 149, 0.8) url(	https://gliafinancial.com/images/cta-img.jpg) no-repeat center; }
 .testimonial-img-1 { }
 .testimonial-name-1 { color: #15549a; font-size: 14px; text-transform: uppercase; font-weight: 500; margin-bottom: 0px; }
 
@@ -493,7 +493,7 @@ index-1
 -------------------------------------*/
 .header-wide { }
 .header-wide .lead { font-size: 21px; color: #778191; margin-top: 12px; }
-.lead-hero-wrapper { background: url(../images/lead-hero-img.jpg)no-repeat; background-size: cover; padding-top: 80px; padding-bottom: 80px; }
+.lead-hero-wrapper { background: url(	https://gliafinancial.com/images/lead-hero-img.jpg)no-repeat; background-size: cover; padding-top: 80px; padding-bottom: 80px; }
 .lead-hero-caption { color: #fff; padding-top: 50px; margin-bottom: 20px; }
 .rating-list { color: #f99d31; margin-top: 25px; font-size: 14px; }
 .lead-hero-title { font-size: 48px; color: #fff; line-height: 58px; }
@@ -506,7 +506,7 @@ index-1
 .pink-circle.circle { background-color: transparent; width: 60px; height: 60px; border: 2px solid #f51f8a; border-radius: 100px; color: #f51f8a; text-align: center; padding: 10px; margin: 0px auto 30px auto; line-height: 1.7; display: inline-block; }
 .highlight-outline { border-radius: 2px; }
 .highlight-outline.outline:hover { border-color: #15549a; -webkit-box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.2); }
-.counter-wrapper { background: url(../images/counter-wrapper.jpg)no-repeat; background-size: cover; padding-top: 150px; padding-bottom: 150px; text-align: center; }
+.counter-wrapper { background: url(	https://gliafinancial.com/images/counter-wrapper.jpg)no-repeat; background-size: cover; padding-top: 150px; padding-bottom: 150px; text-align: center; }
 .counter-block { text-align: center; display: inline-block; margin-bottom: 20px; }
 .counter { display: inline-block; font-size: 46px; border-radius: 50%; color: #fff; font-weight: 600; margin-bottom: 20px; }
 .lead-testimonial .customer-quote-circle { position: initial; margin-bottom: 20px; }
@@ -530,7 +530,7 @@ index-1
 .header-regular #navigation.small-screen #menu-button { color: #fff; }
 .header-regular #navigation.small-screen #menu-button:before { background: #fff; }
 .header-regular #navigation.small-screen #menu-button:after { border-top: 2px solid #fff; border-bottom: 2px solid #fff; }
-.hero-section { background: url(../images/hero-img-1.jpg)no-repeat; background-size: cover; background-position-x: center; }
+.hero-section { background: url(	https://gliafinancial.com/images/hero-img-1.jpg)no-repeat; background-size: cover; background-position-x: center; }
 .hero-tab-block { padding-top: 241px; padding-bottom: 100px; }
 .hero-tab-block .st-tabs .nav-link { padding: 18px 25px; text-align: center; margin-right: -1px; margin-left: -1px; }
 .loan-form { }
@@ -579,7 +579,7 @@ index-1
  index-8 homepage student-refinance (11 June, 2018)
 -----------------------------------------------------*/
 .header-wide { padding-top: 10px; padding-bottom: 10px; }
-.refinance-hero-section { background: url(../images/hero-img-2.jpg)no-repeat; background-size: cover; position: relative; background-position-x: center; }
+.refinance-hero-section { background: url(	https://gliafinancial.com/images/hero-img-2.jpg)no-repeat; background-size: cover; position: relative; background-position-x: center; }
 .refinance-hero-block { padding-top: 164px; padding-bottom: 164px; }
 .refinance-hero-block h1 { font-size: 48px; line-height: 58px; }
 .refinance-rate-section { background-color: rgba(21, 84, 154, 0.8); color: #fff; padding: 20px 25px; position: absolute; bottom: 0; border-bottom: 5px solid #0a4b94; }
@@ -685,7 +685,7 @@ compare Student loan table
 .post-caption-img img { border-radius: 3px; }
 .post-caption-content { position: absolute; bottom: 0px; padding: 27px; }
 .post-caption-block .meta { text-transform: capitalize; }
-.cta-section-app { background: url(../images/cta-img-4.jpg)no-repeat; background-size: cover; background-position-x: 50%; }
+.cta-section-app { background: url(	https://gliafinancial.com/images/cta-img-4.jpg)no-repeat; background-size: cover; background-position-x: 50%; }
 
 
 /*---------------------------------------------------
@@ -792,7 +792,7 @@ footer
 /*--------------------------------
 Page header
 ---------------------------------*/
-.page-header { margin: 0; padding: 175px 0px 80px; min-height: 410px; border: none; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(../images/page-header.jpg) no-repeat center; background-size: cover; }
+.page-header { margin: 0; padding: 175px 0px 80px; min-height: 410px; border: none; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(	https://gliafinancial.com/images/page-header.jpg) no-repeat center; background-size: cover; }
 .page-title { margin-bottom: 0px; font-size: 36px; }
 .rate-block { text-align: right; }
 .rate-number { margin-bottom: 0px; line-height: 1; color: #f51f8a; }
@@ -931,7 +931,7 @@ Pagination
 /*--------------------------------
 Extra Plugin CSS - Back to top
 ---------------------------------*/
-.cd-top { display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; overflow: hidden; text-indent: 100%; white-space: nowrap; visibility: hidden; border-radius: 5px; background: rgba(245, 31, 138, 100) url(../images/cd-top-arrow.svg) no-repeat center 50%; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; }
+.cd-top { display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; overflow: hidden; text-indent: 100%; white-space: nowrap; visibility: hidden; border-radius: 5px; background: rgba(245, 31, 138, 100) url(	https://gliafinancial.com/images/cd-top-arrow.svg) no-repeat center 50%; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; }
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover { -webkit-transition: opacity .3s 0s, visibility 0s 0s; -moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s; }
 .cd-top.cd-is-visible {    /* the button becomes visible */
 visibility: visible; opacity: 1; }
@@ -1009,7 +1009,7 @@ About us
 .why-choose-section { }
 .testimonial-section { }
 .cta-section { }
-.cta-section-second { background: url(../images/cta-img-2.jpg)no-repeat; background-size: cover; }
+.cta-section-second { background: url(	https://gliafinancial.com/images/cta-img-2.jpg)no-repeat; background-size: cover; }
 .cta-section-second h1 { font-size: 42px; }
 .text-big { font-size: 20px; color: #f51f8a; font-weight: 600; margin-bottom: 0px; }
 
@@ -1152,8 +1152,8 @@ Header - 2
 /*-----------------------------------------
 Landing Page Template
 ------------------------------------------*/
-.hero { position: relative; padding-top: 60px; padding-bottom: 100px; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(../images/lp-car-image.jpg) no-repeat center; background-size: cover; }
-.hero-home-loan { position: relative; padding-top: 60px; padding-bottom: 100px; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(../images/home-loan-lp.jpg) no-repeat center; background-size: cover; }
+.hero { position: relative; padding-top: 60px; padding-bottom: 100px; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(	https://gliafinancial.com/images/lp-car-image.jpg) no-repeat center; background-size: cover; }
+.hero-home-loan { position: relative; padding-top: 60px; padding-bottom: 100px; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url(	https://gliafinancial.com/images/home-loan-lp.jpg) no-repeat center; background-size: cover; }
 .hero-title { font-size: 48px; line-height: 52px; color: #fff; font-weight: 800; letter-spacing: -1px; margin-bottom: 30px; }
 .hero-captions { padding-top: 80px; }
 .hero-text { color: #fff; }
@@ -1464,7 +1464,7 @@ li {
 
 
     .collection {
-    
+
     }
 
     /* In order to maximize row lines, only display one line for a cell */
@@ -1480,7 +1480,7 @@ li {
     }
 
     .collection-container>.item-container:first-child {
-    
+
     }
 
     .item-container:hover {
